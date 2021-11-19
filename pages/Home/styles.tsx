@@ -66,10 +66,12 @@ export const Divider = styled.span`
 `;
 
 export const ListTitle = styled.h3`
+  font-family: "Circular-Medium";
   font-size: 14px;
 `;
 
 export const ListLink = styled.a`
+  font-family: "Circular-Light";
   font-size: 14px;
   color: #222222;
 
