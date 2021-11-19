@@ -3,6 +3,7 @@ import Image from "next/image";
 import InstagramIcon from "../public/assets/instagram-icon.svg";
 import TwitterIcon from "../public/assets/twitter-icon.svg";
 import FacebookIcon from "../public/assets/facebook-icon.svg";
+import GlobalIcon from "../public/assets/global-icon.svg";
 
 export default function Home() {
   return (
@@ -13,22 +14,22 @@ export default function Home() {
         </div>
         <ul>
           <li>
-            <a>Central de Ajuda</a>
+            <a href="/">Central de Ajuda</a>
           </li>
           <li>
-            <a>Informações de segurança</a>
+            <a href="/">Informações de segurança</a>
           </li>
           <li>
-            <a>Opções de cancelamento</a>
+            <a href="/">Opções de cancelamento</a>
           </li>
           <li>
-            <a>Nossa resposta à pandemia de COVID-19</a>
+            <a href="/">Nossa resposta à pandemia de COVID-19</a>
           </li>
           <li>
-            <a>Apoie pessoas com deficiência</a>
+            <a href="/">Apoie pessoas com deficiência</a>
           </li>
           <li>
-            <a>Denuncie um problema do bairro</a>
+            <a href="/">Denuncie um problema do bairro</a>
           </li>
         </ul>
       </section>
@@ -39,16 +40,16 @@ export default function Home() {
         </div>
         <ul>
           <li>
-            <a>Airbnb.org: ajuda em desastres</a>
+            <a href="/">Airbnb.org: ajuda em desastres</a>
           </li>
           <li>
-            <a>Apoie refugiados afegãos</a>
+            <a href="/">Apoie refugiados afegãos</a>
           </li>
           <li>
-            <a>Diversidade e pertencimento</a>
+            <a href="/">Diversidade e pertencimento</a>
           </li>
           <li>
-            <a>Combate à discriminação</a>
+            <a href="/">Combate à discriminação</a>
           </li>
         </ul>
       </section>
@@ -59,19 +60,19 @@ export default function Home() {
         </div>
         <ul>
           <li>
-            <a>Experimente hospedar</a>
+            <a href="/">Experimente hospedar</a>
           </li>
           <li>
-            <a>AirCover: proteção ao hospedar</a>
+            <a href="/">AirCover: proteção ao hospedar</a>
           </li>
           <li>
-            <a>Explore recursos para hospedar</a>
+            <a href="/">Explore recursos para hospedar</a>
           </li>
           <li>
-            <a>Visite o fórum da comunidade</a>
+            <a href="/">Visite o fórum da comunidade</a>
           </li>
           <li>
-            <a>Hospede de forma responsável</a>
+            <a href="/">Hospede de forma responsável</a>
           </li>
         </ul>
       </section>
@@ -82,22 +83,22 @@ export default function Home() {
         </div>
         <ul>
           <li>
-            <a>Newsroom</a>
+            <a href="/">Newsroom</a>
           </li>
           <li>
-            <a>Descubra os novos recursos</a>
+            <a href="/">Descubra os novos recursos</a>
           </li>
           <li>
-            <a>Carta dos nossos fundadores</a>
+            <a href="/">Carta dos nossos fundadores</a>
           </li>
           <li>
-            <a>Carreiras</a>
+            <a href="/">Carreiras</a>
           </li>
           <li>
-            <a>Investidores</a>
+            <a href="/">Investidores</a>
           </li>
           <li>
-            <a>Airbnb Luxe</a>
+            <a href="/">Airbnb Luxe</a>
           </li>
         </ul>
       </section>
@@ -109,13 +110,13 @@ export default function Home() {
             <span>
               <span>·</span>
             </span>
-            <a>Privacidade</a>
+            <a href="/">Privacidade</a>
             <span>·</span>
-            <a>Termos</a>
+            <a href="/">Termos</a>
             <span>·</span>
-            <a>Mapa do site</a>
+            <a href="/">Mapa do site</a>
             <span>·</span>
-            <a>Informações da empresa</a>
+            <a href="/">Informações da empresa</a>
           </div>
         </div>
 
@@ -123,6 +124,9 @@ export default function Home() {
           <div>
             <span>
               <button type="button">
+                <span>
+                  <Image src={GlobalIcon} width="18" height="18" />
+                </span>
                 <span>Português (BR)</span>
               </button>
             </span>
