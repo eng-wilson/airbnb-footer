@@ -29,9 +29,8 @@ export default function Home() {
     <Container>
       <MainLinksContainer>
         <ListSection>
-          <div>
-            <ListTitle>Atendimento</ListTitle>
-          </div>
+          <ListTitle>Atendimento</ListTitle>
+
           <CommonListContainer>
             <ListItem>
               <ListLink href="/">Central de Ajuda</ListLink>

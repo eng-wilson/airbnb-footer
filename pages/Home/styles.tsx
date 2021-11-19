@@ -10,6 +10,10 @@ export const Container = styled.main`
   align-items: center;
 
   background-color: #f7f7f7;
+
+  @media (max-width: 1112px) {
+    padding: 0px 40px;
+  }
 `;
 
 export const RowContainer = styled.div`
@@ -38,6 +42,11 @@ export const CommonListContainer = styled.ul`
 
   margin: 0px;
   padding: 0px;
+
+  @media (max-width: 1112px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 export const RowList = styled.ul`
@@ -68,6 +77,10 @@ export const MainLinksContainer = styled.div`
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 1112px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const FooterInfoContainer = styled.div`
@@ -81,6 +94,10 @@ export const FooterInfoContainer = styled.div`
 
 export const ListItem = styled.li`
   margin-top: 16px;
+
+  @media (max-width: 1112px) {
+    margin-top: 8px;
+  }
 `;
 
 export const Divider = styled.span`
@@ -90,6 +107,10 @@ export const Divider = styled.span`
 export const ListTitle = styled.h3`
   font-family: "Circular-Medium";
   font-size: 14px;
+
+  @media (max-width: 1112px) {
+    margin: 7px 0px;
+  }
 `;
 
 export const ListLink = styled.a`
@@ -128,4 +149,11 @@ export const SimpleText = styled.span`
 
 export const ListSection = styled.section`
   padding: 0px 12px;
+
+  @media (max-width: 1112px) {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid #ddd;
+  }
 `;
