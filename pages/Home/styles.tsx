@@ -14,6 +14,10 @@ export const Container = styled.main`
   @media (max-width: 1112px) {
     padding: 0px 40px;
   }
+
+  @media (max-width: 730px) {
+    padding: 0px 24px;
+  }
 `;
 
 export const RowContainer = styled.div`
@@ -46,6 +50,11 @@ export const CommonListContainer = styled.ul`
   @media (max-width: 1112px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 730px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
