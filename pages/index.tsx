@@ -1,3 +1,9 @@
+import Image from "next/image";
+
+import InstagramIcon from "../public/assets/instagram-icon.svg";
+import TwitterIcon from "../public/assets/twitter-icon.svg";
+import FacebookIcon from "../public/assets/facebook-icon.svg";
+
 export default function Home() {
   return (
     <main>
@@ -130,13 +136,13 @@ export default function Home() {
           <div>
             <ul>
               <li>
-                <a>Facebook</a>
+                <Image src={InstagramIcon} width="18" height="18" />
               </li>
               <li>
-                <a>Twitter</a>
+                <Image src={TwitterIcon} width="18" height="18" />
               </li>
               <li>
-                <a>Instagram</a>
+                <Image src={FacebookIcon} width="18" height="18" />
               </li>
             </ul>
           </div>
