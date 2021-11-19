@@ -8,6 +8,8 @@ export const Container = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-color: #f7f7f7;
 `;
 
 export const RowContainer = styled.div`
@@ -57,4 +59,8 @@ export const MainLinksContainer = styled.div`
 
 export const ListItem = styled.li`
   margin-top: 16px;
+`;
+
+export const Divider = styled.span`
+  padding: 0px 10px;
 `;

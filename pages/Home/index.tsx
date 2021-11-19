@@ -13,6 +13,7 @@ import {
   ListItem,
   MainLinksContainer,
   RowContainerEnd,
+  Divider,
 } from "./styles";
 
 export default function Home() {
@@ -119,15 +120,14 @@ export default function Home() {
         <RowContainer>
           <span>© 2021 Airbnb, Inc.</span>
           <div>
-            <span>
-              <span>·</span>
-            </span>
+            <Divider>·</Divider>
+
             <a href="/">Privacidade</a>
-            <span>·</span>
+            <Divider>·</Divider>
             <a href="/">Termos</a>
-            <span>·</span>
+            <Divider>·</Divider>
             <a href="/">Mapa do site</a>
-            <span>·</span>
+            <Divider>·</Divider>
             <a href="/">Informações da empresa</a>
           </div>
         </RowContainer>
