@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   flex: 1;
-  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@ export const Container = styled.main`
 `;
 
 export const RowContainer = styled.div`
-  width: 100%;
+  flex: 1;
 
   display: flex;
   flex-direction: row;
@@ -41,8 +40,6 @@ export const RowContainer = styled.div`
 `;
 
 export const RowContainerEnd = styled.div`
-  width: 100%;
-
   display: flex;
   flex-direction: row;
 
@@ -110,6 +107,10 @@ export const MainLinksContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  @media (min-width: 1112px) {
+    width: 90%;
+  }
+
   @media (max-width: 1112px) {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -123,8 +124,20 @@ export const FooterInfoContainer = styled.div`
 
   display: flex;
 
+  @media (min-width: 1112px) {
+    width: 90%;
+
+    border-top: 1px solid #ddd;
+  }
+
   @media (max-width: 1112px) {
     flex-direction: column-reverse;
+
+    padding: 0px;
+  }
+
+  @media (max-width: 730px) {
+    padding-bottom: 24px;
   }
 `;
 
@@ -193,5 +206,13 @@ export const ListSection = styled.section`
     padding-bottom: 24px;
 
     border-bottom: 1px solid #ddd;
+
+    :last-child {
+      margin-bottom: 0px;
+    }
   }
+`;
+
+export const SocialMediaItem = styled.li`
+  cursor: pointer;
 `;

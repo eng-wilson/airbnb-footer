@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { useViewport } from "../../hooks/useViewPort";
+
 import InstagramIcon from "../../public/assets/instagram-icon.svg";
 import TwitterIcon from "../../public/assets/twitter-icon.svg";
 import FacebookIcon from "../../public/assets/facebook-icon.svg";
@@ -22,9 +24,12 @@ import {
   ListSection,
   FooterInfoContainer,
   SocialMedia,
+  SocialMediaItem,
 } from "./styles";
 
 export default function Home() {
+  const { width } = useViewport();
+
   return (
     <Container>
       <MainLinksContainer>
@@ -129,7 +134,7 @@ export default function Home() {
         <RowContainer>
           <SimpleText>© 2021 Airbnb, Inc.</SimpleText>
           <div>
-            <Divider>·</Divider>
+            {width > 1112 && <Divider>·</Divider>}
 
             <ListLink href="/">Privacidade</ListLink>
             <Divider>·</Divider>
@@ -156,17 +161,19 @@ export default function Home() {
             </Button>
           </RowList>
 
-          <SocialMedia>
-            <li>
-              <Image src={FacebookIcon} width="18" height="18" />
-            </li>
-            <li>
-              <Image src={TwitterIcon} width="18" height="18" />
-            </li>
-            <li>
-              <Image src={InstagramIcon} width="18" height="18" />
-            </li>
-          </SocialMedia>
+          {width > 730 && (
+            <SocialMedia>
+              <SocialMediaItem>
+                <Image src={FacebookIcon} width="18" height="18" />
+              </SocialMediaItem>
+              <SocialMediaItem>
+                <Image src={TwitterIcon} width="18" height="18" />
+              </SocialMediaItem>
+              <SocialMediaItem>
+                <Image src={InstagramIcon} width="18" height="18" />
+              </SocialMediaItem>
+            </SocialMedia>
+          )}
         </RowContainerEnd>
       </FooterInfoContainer>
     </Container>
