@@ -51,10 +51,10 @@ export const MainLinksContainer = styled.div`
   width: 100%;
   max-width: 1600px;
 
-  display: flex;
-  justify-content: space-between;
-
   padding: 24px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 `;
 
 export const ListItem = styled.li`
@@ -99,4 +99,8 @@ export const DecoratedText = styled.span`
 
 export const SimpleText = styled.span`
   font-size: 14px;
+`;
+
+export const ListSection = styled.section`
+  padding: 0px 12px;
 `;

@@ -19,13 +19,14 @@ import {
   Button,
   DecoratedText,
   SimpleText,
+  ListSection,
 } from "./styles";
 
 export default function Home() {
   return (
     <Container>
       <MainLinksContainer>
-        <section>
+        <ListSection>
           <div>
             <ListTitle>Atendimento</ListTitle>
           </div>
@@ -51,9 +52,9 @@ export default function Home() {
               <ListLink href="/">Denuncie um problema do bairro</ListLink>
             </ListItem>
           </CommonListContainer>
-        </section>
+        </ListSection>
 
-        <section>
+        <ListSection>
           <div>
             <ListTitle>Comunidade</ListTitle>
           </div>
@@ -71,9 +72,9 @@ export default function Home() {
               <ListLink href="/">Combate à discriminação</ListLink>
             </ListItem>
           </CommonListContainer>
-        </section>
+        </ListSection>
 
-        <section>
+        <ListSection>
           <div>
             <ListTitle>Hospedagem</ListTitle>
           </div>
@@ -94,9 +95,9 @@ export default function Home() {
               <ListLink href="/">Hospede de forma responsável</ListLink>
             </ListItem>
           </CommonListContainer>
-        </section>
+        </ListSection>
 
-        <section>
+        <ListSection>
           <div>
             <ListTitle>Sobre</ListTitle>
           </div>
@@ -120,7 +121,7 @@ export default function Home() {
               <ListLink href="/">Airbnb Luxe</ListLink>
             </ListItem>
           </CommonListContainer>
-        </section>
+        </ListSection>
       </MainLinksContainer>
 
       <MainLinksContainer>
