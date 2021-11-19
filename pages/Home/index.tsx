@@ -20,6 +20,8 @@ import {
   DecoratedText,
   SimpleText,
   ListSection,
+  FooterInfoContainer,
+  SocialMedia,
 } from "./styles";
 
 export default function Home() {
@@ -124,7 +126,7 @@ export default function Home() {
         </ListSection>
       </MainLinksContainer>
 
-      <MainLinksContainer>
+      <FooterInfoContainer>
         <RowContainer>
           <SimpleText>© 2021 Airbnb, Inc.</SimpleText>
           <div>
@@ -155,19 +157,19 @@ export default function Home() {
             </Button>
           </RowList>
 
-          <RowList>
+          <SocialMedia>
             <li>
               <Image src={FacebookIcon} width="18" height="18" />
             </li>
             <li>
-              <Image src={InstagramIcon} width="18" height="18" />
-            </li>
-            <li>
               <Image src={TwitterIcon} width="18" height="18" />
             </li>
-          </RowList>
+            <li>
+              <Image src={InstagramIcon} width="18" height="18" />
+            </li>
+          </SocialMedia>
         </RowContainerEnd>
-      </MainLinksContainer>
+      </FooterInfoContainer>
     </Container>
   );
 }

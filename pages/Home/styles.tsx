@@ -18,6 +18,8 @@ export const RowContainer = styled.div`
   display: flex;
   flex-direction: row;
 
+  padding: 0px 12px;
+
   align-items: center;
 `;
 
@@ -47,6 +49,17 @@ export const RowList = styled.ul`
   align-items: center;
 `;
 
+export const SocialMedia = styled.ul`
+  list-style-type: none;
+
+  width: 102px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 export const MainLinksContainer = styled.div`
   width: 100%;
   max-width: 1600px;
@@ -55,6 +68,15 @@ export const MainLinksContainer = styled.div`
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+`;
+
+export const FooterInfoContainer = styled.div`
+  width: 100%;
+  max-width: 1600px;
+
+  padding: 24px 0px;
+
+  display: flex;
 `;
 
 export const ListItem = styled.li`
@@ -100,6 +122,7 @@ export const DecoratedText = styled.span`
 `;
 
 export const SimpleText = styled.span`
+  font-family: "Circular-Light";
   font-size: 14px;
 `;
 
