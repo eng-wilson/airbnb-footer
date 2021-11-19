@@ -64,3 +64,18 @@ export const ListItem = styled.li`
 export const Divider = styled.span`
   padding: 0px 10px;
 `;
+
+export const ListTitle = styled.h3`
+  font-size: 14px;
+`;
+
+export const ListLink = styled.a`
+  font-size: 14px;
+  color: #222222;
+
+  text-decoration: none;
+
+  :hover {
+    text-decoration: underline;
+  }
+`;

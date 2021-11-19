@@ -14,6 +14,8 @@ import {
   MainLinksContainer,
   RowContainerEnd,
   Divider,
+  ListTitle,
+  ListLink,
 } from "./styles";
 
 export default function Home() {
@@ -22,95 +24,97 @@ export default function Home() {
       <MainLinksContainer>
         <section>
           <div>
-            <h3>Atendimento</h3>
+            <ListTitle>Atendimento</ListTitle>
           </div>
           <CommonListContainer>
             <ListItem>
-              <a href="/">Central de Ajuda</a>
+              <ListLink href="/">Central de Ajuda</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Informações de segurança</a>
+              <ListLink href="/">Informações de segurança</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Opções de cancelamento</a>
+              <ListLink href="/">Opções de cancelamento</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Nossa resposta à pandemia de COVID-19</a>
+              <ListLink href="/">
+                Nossa resposta à pandemia de COVID-19
+              </ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Apoie pessoas com deficiência</a>
+              <ListLink href="/">Apoie pessoas com deficiência</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Denuncie um problema do bairro</a>
+              <ListLink href="/">Denuncie um problema do bairro</ListLink>
             </ListItem>
           </CommonListContainer>
         </section>
 
         <section>
           <div>
-            <h3>Comunidade</h3>
+            <ListTitle>Comunidade</ListTitle>
           </div>
           <CommonListContainer>
             <ListItem>
-              <a href="/">Airbnb.org: ajuda em desastres</a>
+              <ListLink href="/">Airbnb.org: ajuda em desastres</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Apoie refugiados afegãos</a>
+              <ListLink href="/">Apoie refugiados afegãos</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Diversidade e pertencimento</a>
+              <ListLink href="/">Diversidade e pertencimento</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Combate à discriminação</a>
+              <ListLink href="/">Combate à discriminação</ListLink>
             </ListItem>
           </CommonListContainer>
         </section>
 
         <section>
           <div>
-            <h3>Hospedagem</h3>
+            <ListTitle>Hospedagem</ListTitle>
           </div>
           <CommonListContainer>
             <ListItem>
-              <a href="/">Experimente hospedar</a>
+              <ListLink href="/">Experimente hospedar</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">AirCover: proteção ao hospedar</a>
+              <ListLink href="/">AirCover: proteção ao hospedar</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Explore recursos para hospedar</a>
+              <ListLink href="/">Explore recursos para hospedar</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Visite o fórum da comunidade</a>
+              <ListLink href="/">Visite o fórum da comunidade</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Hospede de forma responsável</a>
+              <ListLink href="/">Hospede de forma responsável</ListLink>
             </ListItem>
           </CommonListContainer>
         </section>
 
         <section>
           <div>
-            <h3>Sobre</h3>
+            <ListTitle>Sobre</ListTitle>
           </div>
           <CommonListContainer>
             <ListItem>
-              <a href="/">Newsroom</a>
+              <ListLink href="/">Newsroom</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Descubra os novos recursos</a>
+              <ListLink href="/">Descubra os novos recursos</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Carta dos nossos fundadores</a>
+              <ListLink href="/">Carta dos nossos fundadores</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Carreiras</a>
+              <ListLink href="/">Carreiras</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Investidores</a>
+              <ListLink href="/">Investidores</ListLink>
             </ListItem>
             <ListItem>
-              <a href="/">Airbnb Luxe</a>
+              <ListLink href="/">Airbnb Luxe</ListLink>
             </ListItem>
           </CommonListContainer>
         </section>
@@ -122,13 +126,13 @@ export default function Home() {
           <div>
             <Divider>·</Divider>
 
-            <a href="/">Privacidade</a>
+            <ListLink href="/">Privacidade</ListLink>
             <Divider>·</Divider>
-            <a href="/">Termos</a>
+            <ListLink href="/">Termos</ListLink>
             <Divider>·</Divider>
-            <a href="/">Mapa do site</a>
+            <ListLink href="/">Mapa do site</ListLink>
             <Divider>·</Divider>
-            <a href="/">Informações da empresa</a>
+            <ListLink href="/">Informações da empresa</ListLink>
           </div>
         </RowContainer>
 
