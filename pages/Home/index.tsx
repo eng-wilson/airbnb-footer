@@ -16,6 +16,9 @@ import {
   Divider,
   ListTitle,
   ListLink,
+  Button,
+  DecoratedText,
+  SimpleText,
 } from "./styles";
 
 export default function Home() {
@@ -122,7 +125,7 @@ export default function Home() {
 
       <MainLinksContainer>
         <RowContainer>
-          <span>© 2021 Airbnb, Inc.</span>
+          <SimpleText>© 2021 Airbnb, Inc.</SimpleText>
           <div>
             <Divider>·</Divider>
 
@@ -137,22 +140,19 @@ export default function Home() {
         </RowContainer>
 
         <RowContainerEnd>
-          <div>
-            <span>
-              <button type="button">
-                <span>
-                  <Image src={GlobalIcon} width="18" height="18" />
-                </span>
-                <span>Português (BR)</span>
-              </button>
-            </span>
-            <span>
-              <button type="button">
-                <span>R$</span>
-                <span>BRL</span>
-              </button>
-            </span>
-          </div>
+          <RowList>
+            <Button type="button">
+              <span>
+                <Image src={GlobalIcon} width="18" height="18" />
+              </span>
+              <DecoratedText>Português (BR)</DecoratedText>
+            </Button>
+
+            <Button type="button">
+              <span>R$</span>
+              <DecoratedText>BRL</DecoratedText>
+            </Button>
+          </RowList>
 
           <RowList>
             <li>

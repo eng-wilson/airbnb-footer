@@ -79,3 +79,24 @@ export const ListLink = styled.a`
     text-decoration: underline;
   }
 `;
+
+export const Button = styled.button`
+  background-color: transparent;
+  border: none;
+
+  :hover {
+    cursor: pointer;
+  }
+
+  display: flex;
+  align-items: center;
+`;
+
+export const DecoratedText = styled.span`
+  padding-left: 8px;
+  text-decoration: underline;
+`;
+
+export const SimpleText = styled.span`
+  font-size: 14px;
+`;
