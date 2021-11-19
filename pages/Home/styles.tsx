@@ -29,6 +29,15 @@ export const RowContainer = styled.div`
   padding: 0px 12px;
 
   align-items: center;
+
+  @media (max-width: 1112px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 730px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const RowContainerEnd = styled.div`
@@ -39,6 +48,16 @@ export const RowContainerEnd = styled.div`
 
   justify-content: flex-end;
   align-items: center;
+
+  @media (max-width: 1112px) {
+    justify-content: center;
+
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: 730px) {
+    justify-content: flex-start;
+  }
 `;
 
 export const CommonListContainer = styled.ul`
@@ -76,6 +95,10 @@ export const SocialMedia = styled.ul`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1112px) {
+    margin-left: 18px;
+  }
 `;
 
 export const MainLinksContainer = styled.div`
@@ -99,6 +122,10 @@ export const FooterInfoContainer = styled.div`
   padding: 24px 0px;
 
   display: flex;
+
+  @media (max-width: 1112px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -144,6 +171,8 @@ export const Button = styled.button`
 
   display: flex;
   align-items: center;
+
+  margin-right: 18px;
 `;
 
 export const DecoratedText = styled.span`
